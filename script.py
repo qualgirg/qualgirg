@@ -274,7 +274,7 @@ if input("Enable password policy? (y/n) ") == "y":
         print("common-auth login policy set.")
 print("---------")
 
-# Media files
+# Media files (if you have time at the end you can delete the other media file types)
 if input("View media files? (y/n) ") == "y":
     media_files = get_output("sudo find / -type f -iname *.mp3", outfile="out/mp3_log.txt")
     print("\n".join(media_files), "\nlength: {}".format(len(media_files)))
